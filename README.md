@@ -109,9 +109,14 @@ Feature Selection di lakukan terhadap Variable:
 Tabel Evaluation Matrix
 - ![Eva Matrix](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/Compare.png)
 
-Bisa dilihat dari tabel diatas, Best Model pada Machine Learning Modeling ini adalah RF Tuned Bayes, dengan nilai R-Squared : 95, Mean Absolute Error : 25.47, dan Residual Negative : 0.53
+### Machine Learning Insight
+Berdasarkan Evaluation Matrix di atas, Ditemukan 5 Model Machine Learning yang memenuhi kriteria Bike Sharing Prediction. Dengan basis scoring R-Squared, MAE, dan Residual Negative.
+- `Base DT` Mempunyai nilai Residual Negative terbaik, tetapi model tersebut Overfitting. 
+- `Decision Tree Grid 2`, adalah model yang memiliki Residual Negative tertinggi setelah `Base DT`, tetapi nilai MAE nya di atas rata-rata MAE semua model. 
+- `Base RF`, `RF Tuned Bayes`, dan `XGB Tuned Randomized` memiliki nilai Evaluation Matrix yang mirip.
 
 ### Conclusion
+- Best Model Machine Learning yang dipilih adalah **RF Tuned Bayes**, karena memiliki nilai R-Squared yang tinggi sebesar 95 dan MAE lebih rendah di bandingkan dengan rata-rata MAE semua model (lebih baik dibandingkan `Base RF`) dan Memiliki Nilai Residual Negative 52,96% (lebih tinggi dibandingkan `XGB Tuned Randomized`).
 
 - Untuk Jadwal Bike Maintenance bisa dengan beberapa opsi/sequnce :
 
@@ -132,4 +137,4 @@ Bisa dilihat dari tabel diatas, Best Model pada Machine Learning Modeling ini ad
      - Efisiensi Bike Storing
          - Menyimpan Sepeda pada saat minat penyewaan Sepeda Kecil, Untuk Menghindari Kerusakan
 
-    
+   
