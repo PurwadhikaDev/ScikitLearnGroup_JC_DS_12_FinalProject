@@ -27,12 +27,12 @@ Sepeda membutuhkan pemeliharaan rutin untuk dapat dipakai (sebagai sepeda rental
 
 ### Data Cleaning & Pre - Processing
 
-- Checking Missing Value using df.isna.sum()
-    - ![Missing Value](https://github.com/ricel8168/Bike-Sharing-Prediction/blob/main/SS/missing%20value.jpeg)
+- Checking Missing Value
+    - ![Missing Value](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/missing%20value.jpeg)
     
 - Checking Outliers
-    - ![Outliers Box Plot](https://github.com/ricel8168/Bike-Sharing-Prediction/blob/main/SS/outliers%20boxplot.jpeg)
-    - ![Outliers Tabular](https://github.com/ricel8168/Bike-Sharing-Prediction/blob/main/SS/outliers%20tabular.jpeg)
+    - ![Outliers Box Plot](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/outliers%20boxplot.jpeg)
+    - ![Outliers Tabular](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/outliers%20tabular.jpeg)
 
 - Pre-processing 
     - Membuat kolom baru untuk memisahkan Outliers dengan data asli. Untuk melakukan pengecheckan apakah Outliers ini berpengaruh terhadap data asli
@@ -66,7 +66,7 @@ Sepeda membutuhkan pemeliharaan rutin untuk dapat dipakai (sebagai sepeda rental
 
 - Diantara tahun 2011 dan 2012, penyewaan sepeda terbanyak terjadi di tahun 2012. Yang mempunyai peningkatan sebesar **39.3%**) dari tahun 2011
 
-- [Full Data Analysis](https://github.com/ricel8168/Bike-Sharing-Prediction/blob/main/EDA-Bike%20Sharing.ipynb)
+- [Full Data Analysis](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/EDA-Bike%20Sharing.ipynb)
 
 ### Machine Learning Regression
 
@@ -83,31 +83,31 @@ Feature Selection di lakukan terhadap Variable:
 
 - Base Model Terbaik:
     - Decision Tree
-        - ![Decision Tree](https://github.com/ricel8168/Bike-Sharing-Prediction/blob/main/SS/DT%20Based.png)    
+        - ![Decision Tree](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/DT%20Based.png)    
    
     
     - Random Forest Regressor
-        - ![Random Forest](https://github.com/ricel8168/Bike-Sharing-Prediction/blob/main/SS/DT%20Grid%202.png)
+        - ![Random Forest](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/DT%20Grid%202.png)
     
     - XGBoost
-        - ![XGBoost](https://github.com/ricel8168/Bike-Sharing-Prediction/blob/main/SS/XGB%20Base.png)
+        - ![XGBoost](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/XGB%20Base.png)
     
 - Hyperparameter Tuning:
      - Decision Tree
          - best.params: 'criterion' : ['mae'], 'max_depth' : [17], 'max_features' : None, 'min_samples_leaf' : [2], 'min_samples_split' : [16]
-            - ![Decision Tree](https://github.com/ricel8168/Bike-Sharing-Prediction/blob/main/SS/DT%20Grid%202.png)
+            - ![Decision Tree](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/DT%20Grid%202.png)
     
     - Random Forest Regressor
         - best.params: 'n_estimators' : [4010], 'max_depth' : [36], 'max_features' : ['auto'], 'min_samples_leaf' : [1], 'min_samples_split' : [4]
-            - ![Random Forest](https://github.com/ricel8168/Bike-Sharing-Prediction/blob/main/SS/RF%20Bayes.png)
+            - ![Random Forest](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/RF%20Bayes.png)
     
     - XGBoost
         - best.params: 'learning_rate' : [0.1], 'max_depth' : [6], 'n_estimators' : [1300]
-            - ![XGBoost](https://github.com/ricel8168/Bike-Sharing-Prediction/blob/main/SS/XGB%20Bayes.png)
+            - ![XGBoost](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/XGB%20Bayes.png)
 
 
 Tabel Evaluation Matrix
-- ![Eva Matrix](https://github.com/ricel8168/Bike-Sharing-Prediction/blob/main/SS/Compare.png)
+- ![Eva Matrix](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/Compare.png)
 
 Bisa dilihat dari tabel diatas, Best Model pada Machine Learning Modeling ini adalah RF Tuned Bayes, dengan nilai R-Squared : 95, Mean Absolute Error : 25.47, dan Residual Negative : 0.53
 
