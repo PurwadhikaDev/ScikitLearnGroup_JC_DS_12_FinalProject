@@ -66,7 +66,7 @@ Sepeda membutuhkan pemeliharaan rutin untuk dapat dipakai (sebagai sepeda rental
 
 - Diantara tahun 2011 dan 2012, penyewaan sepeda terbanyak terjadi di tahun 2012. Yang mempunyai peningkatan sebesar **39.3%**) dari tahun 2011
 
-- [Full Data Analysis](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/EDA-Bike%20Sharing.ipynb)
+- [Full Data Analysis](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/Exploratory%20Data%20Analysis%20-%20Bike%20Sharing.ipynb)
 
 ### Machine Learning Regression
 
