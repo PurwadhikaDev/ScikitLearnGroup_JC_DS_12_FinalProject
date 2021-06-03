@@ -135,7 +135,7 @@ Feature Selection di lakukan terhadap Variable:
     - Random Forest Regressor
         - best.params: 'n_estimators' : [2280], 'max_depth' : [81], 'max_features' : ['None'], 'min_samples_leaf' : [1], 'min_samples_split' : [4]
         
-            - ![Random Forest](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/RF%20Bayes.png)
+            - ![Random Forest](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/RF-Bayes.png)
     
     - XGBoost
         - best.params: 'learning_rate' : [0.1], 'max_depth' : [6], 'n_estimators' : [1300]
