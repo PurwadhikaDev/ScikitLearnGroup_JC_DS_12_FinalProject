@@ -9,6 +9,8 @@ Member :
 
 Dataset taken from : [Bike Sharing in Washington D.C. Dataset](https://www.kaggle.com/marklvl/bike-sharing-dataset)
 
+<hr>
+
 ### Background
 Project ini adalah memprediksi keminatan penyewaan sepeda di Washington D.C. Dengan adanya system dapat mempermudah pengguna dan anggota untuk menyewa speda. Di tahun 2017  ada lebih dari 500 sistem penyewaan sepeda di seluruh dunia, yang mempunyai total kesuluruhan 500 ribu sepeda. Saat ini sistem penyewaan sepeda berperan penting dalam masalah lalu lintas, lingkungan dan Kesehatan, darimaka itu adanya keinaikan keminatan dari pelanggan.
 
@@ -56,6 +58,7 @@ Sepeda membutuhkan pemeliharaan rutin untuk dapat dipakai (sebagai sepeda rental
 - __Prediksi penggunaan sepeda__ (minimum dan maksimum) untuk meminimalisir _customer loss_ dan memperkirakan stok sepeda.
 - Membuat __penjadwalan *maintenance*__ yang baik untuk meminimalisir _customer loss_.
 
+<hr>
 
 ### Data Cleaning & Pre - Processing
 
@@ -99,6 +102,8 @@ Sepeda membutuhkan pemeliharaan rutin untuk dapat dipakai (sebagai sepeda rental
 - Diantara tahun 2011 dan 2012, penyewaan sepeda terbanyak terjadi di tahun 2012. Yang mempunyai peningkatan sebesar **39.3%**) dari tahun 2011
 
 - [Full Data Analysis](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/Exploratory%20Data%20Analysis%20-%20Bike%20Sharing.ipynb)
+
+<hr>
 
 ### Machine Learning Regression
 
@@ -151,6 +156,8 @@ Berdasarkan Evaluation Matrix di atas, Ditemukan 5 Model Machine Learning yang m
 - `Decision Tree Tuned Grid 2` memiliki Residual Negative yang cukup tinggi tetapi nilai MAE nya di atas rata-rata MAE semua model. 
 - `Base RandomForest` dan `RandomForest Tuned Bayes` memiliki nilai Evaluation Matrix yang mirip.
 
+<hr>
+
 ### Conclusion
 Best Model Machine Learning yang dipilih adalah **XGBoost Tuned Randomized**, karena memiliki nilai R-Squared yang tinggi sebesar 94,8 dan MAE lebih rendah di bandingkan dengan rata-rata MAE semua model dan Memiliki Nilai Residual Negative 54,68%.
 
@@ -172,6 +179,8 @@ Best Model Machine Learning yang dipilih adalah **XGBoost Tuned Randomized**, ka
      - Menyediakan Sepeda lebih banyak saat Work-day
      - Efisiensi Bike Storing
          - Menyimpan Sepeda pada saat minat penyewaan Sepeda Kecil, Untuk Menghindari Kerusakan
+
+<hr>
 
 ### Future Works
 
