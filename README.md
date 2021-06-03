@@ -133,7 +133,7 @@ Feature Selection di lakukan terhadap Variable:
             - ![Decision Tree](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/DT%20Grid%201.png)
     
     - Random Forest Regressor
-        - best.params: 'n_estimators' : [4010], 'max_depth' : [36], 'max_features' : ['auto'], 'min_samples_leaf' : [1], 'min_samples_split' : [4]
+        - best.params: 'n_estimators' : [2280], 'max_depth' : [81], 'max_features' : ['None'], 'min_samples_leaf' : [1], 'min_samples_split' : [4]
         
             - ![Random Forest](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/RF%20Bayes.png)
     
