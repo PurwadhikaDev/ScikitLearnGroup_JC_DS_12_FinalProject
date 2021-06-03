@@ -148,12 +148,13 @@ Tabel Evaluation Matrix
 
 ### Machine Learning Insight
 Berdasarkan Evaluation Matrix di atas, Ditemukan 5 Model Machine Learning yang memenuhi kriteria Bike Sharing Prediction. Dengan basis scoring R-Squared, MAE, dan Residual Negative.
-- `Base DT` Mempunyai nilai Residual Negative terbaik, tetapi model tersebut Overfitting. 
-- `Decision Tree Grid 2`, adalah model yang memiliki Residual Negative tertinggi setelah `Base DT`, tetapi nilai MAE nya di atas rata-rata MAE semua model. 
-- `Base RF`, `RF Tuned Bayes`, dan `XGB Tuned Randomized` memiliki nilai Evaluation Matrix yang mirip.
+- `Base DecisionTree` Mempunyai nilai Residual Negative terbaik, tetapi model tersebut Overfitting. 
+- `XGBoost Tuned Randomized` adalah model yang memiliki Residual Negative tertinggi setelah `Base DT`, dan memiliki nilai MAE dan R-Squared yg bagus.
+- `Decision Tree Tuned Grid 2` memiliki Residual Negative yang cukup tinggi tetapi nilai MAE nya di atas rata-rata MAE semua model. 
+- `Base RandomForest` dan `RandomForest Tuned Bayes` memiliki nilai Evaluation Matrix yang mirip.
 
 ### Conclusion
-- Best Model Machine Learning yang dipilih adalah **RF Tuned Bayes**, karena memiliki nilai R-Squared yang tinggi sebesar 95 dan MAE lebih rendah di bandingkan dengan rata-rata MAE semua model (lebih baik dibandingkan `Base RF`) dan Memiliki Nilai Residual Negative 52,96% (lebih tinggi dibandingkan `XGB Tuned Randomized`).
+Best Model Machine Learning yang dipilih adalah **XGBoost Tuned Randomized**, karena memiliki nilai R-Squared yang tinggi sebesar 94,8 dan MAE lebih rendah di bandingkan dengan rata-rata MAE semua model dan Memiliki Nilai Residual Negative 54,68%.
 
 - Untuk Jadwal Bike Maintenance bisa dengan beberapa opsi/sequnce :
 
