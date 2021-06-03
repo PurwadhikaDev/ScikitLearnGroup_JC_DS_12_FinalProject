@@ -121,7 +121,7 @@ Feature Selection di lakukan terhadap Variable:
    
     
     - Random Forest Regressor
-        - ![Random Forest](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/DT%20Grid%202.png)
+        - ![Random Forest](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/RF%20Base.png)
     
     - XGBoost
         - ![XGBoost](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/XGB%20Base.png)
