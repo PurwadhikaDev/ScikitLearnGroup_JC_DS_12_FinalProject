@@ -128,9 +128,9 @@ Feature Selection di lakukan terhadap Variable:
     
 - Hyperparameter Tuning:
      - Decision Tree
-         - best.params: 'criterion' : ['mae'], 'max_depth' : [17], 'max_features' : None, 'min_samples_leaf' : [2], 'min_samples_split' : [16]
+         - best.params: 'max_depth' : [15], 'max_features' : None, 'min_samples_leaf' : [2], 'min_samples_split' : [12]
         
-            - ![Decision Tree](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/DT%20Grid%202.png)
+            - ![Decision Tree](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/DT%20Grid%201.png)
     
     - Random Forest Regressor
         - best.params: 'n_estimators' : [4010], 'max_depth' : [36], 'max_features' : ['auto'], 'min_samples_leaf' : [1], 'min_samples_split' : [4]
