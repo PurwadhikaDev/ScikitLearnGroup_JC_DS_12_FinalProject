@@ -173,4 +173,14 @@ Best Model Machine Learning yang dipilih adalah **XGBoost Tuned Randomized**, ka
      - Efisiensi Bike Storing
          - Menyimpan Sepeda pada saat minat penyewaan Sepeda Kecil, Untuk Menghindari Kerusakan
 
+### Future Works
+
+Hasil machine learning prediction yang dibuat pada project kali ini belum sempurna di karenakan ada beberapa faktor yang berhubungan dengan Dataset tetapi tidak ada.
+Variabel-variabel daro Dataset yang diterima kebanyakan adalah Faktor Eksternal yang mempengaruhi minat penyewaan sepeda.
+
+Faktor yang diharapkan kedepannya untuk meningkatkan performa Model Machine Learning yang digunakan antara lain:
+- Cost/Sales
+- Durasi Pemakaian Sepeda
+- Jarak Pemakaian Sepeda
+- Bike Station
    
