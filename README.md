@@ -138,9 +138,9 @@ Feature Selection di lakukan terhadap Variable:
             - ![Random Forest](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/RF-Bayes.png)
     
     - XGBoost
-        - best.params: 'learning_rate' : [0.1], 'max_depth' : [6], 'n_estimators' : [1300]
+        - best.params: 'learning_rate' : [0.3], 'max_depth' : [46], 'n_estimators' : [5700]
         
-            - ![XGBoost](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/XGB%20Bayes.png)
+            - ![XGBoost](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/XGB%20Random.png)
 
 
 Tabel Evaluation Matrix
