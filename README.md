@@ -101,7 +101,7 @@ Sepeda membutuhkan pemeliharaan rutin untuk dapat dipakai (sebagai sepeda rental
 
 - Diantara tahun 2011 dan 2012, penyewaan sepeda terbanyak terjadi di tahun 2012. Yang mempunyai peningkatan sebesar **39.3%**) dari tahun 2011
 
-- [Full Data Analysis](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/Exploratory%20Data%20Analysis%20-%20Bike%20Sharing.ipynb)
+[Full Data Analysis](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/Exploratory%20Data%20Analysis%20-%20Bike%20Sharing.ipynb)
 
 <hr>
 
@@ -155,6 +155,8 @@ Berdasarkan Evaluation Matrix di atas, Ditemukan 5 Model Machine Learning yang m
 - `XGBoost Tuned Randomized` adalah model yang memiliki Residual Negative tertinggi setelah `Base DT`, dan memiliki nilai MAE dan R-Squared yg bagus.
 - `Decision Tree Tuned Grid 2` memiliki Residual Negative yang cukup tinggi tetapi nilai MAE nya di atas rata-rata MAE semua model. 
 - `Base RandomForest` dan `RandomForest Tuned Bayes` memiliki nilai Evaluation Matrix yang mirip.
+
+[Complete Machine Learning Works](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/Machine%20Learning%20-%20Bike%20Sharing.ipynb)
 
 <hr>
 
