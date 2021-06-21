@@ -107,31 +107,17 @@ Feature Selection is performed on Variables:
 
 - The Best Base Models:
     - Decision Tree Regressor
-        - ![Decision Tree](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/DT%20Based.png)    
-   
-    
     - Random Forest Regressor
-        - ![Random Forest](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/RF%20Base.png)
-    
     - XGBoost Regressor
-        - ![XGBoost](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/XGB%20Base.png)
     
 - Hyperparameter Tuning:
      - Decision Tree Regressor
          - best.params: 'max_depth' : [15], 'max_features' : None, 'min_samples_leaf' : [2], 'min_samples_split' : [12]
-        
-            - ![Decision Tree](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/DT%20Grid%201.png)
-    
     - Random Forest Regressor
         - best.params: 'n_estimators' : [2280], 'max_depth' : [81], 'max_features' : ['None'], 'min_samples_leaf' : [1], 'min_samples_split' : [4]
-        
-            - ![Random Forest](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/RF-Bayes.png)
-    
     - XGBoost Regressor
         - best.params: 'learning_rate' : [0.1], 'max_depth' : [6], 'n_estimators' : [1300]
-        
-            - ![XGBoost](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/XGB%20Bayes.png)
-
+   
 
 Evaluation Matrix Table
 - ![Eva Matrix](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/Compare.png)
