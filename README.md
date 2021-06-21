@@ -99,26 +99,30 @@ Nowadays Bike Sharing Systems are growing rapidly, the demand of using the syste
 Machine Learning Regression is made to predict the number of bicycle stocks provided every day. Target Scoring is R-Squared, Median Absolute Error and Residual Negative. The higher the R-Squared value, the smaller the Median Absolute Error obtained.
 
 Feature Selection is performed on Variables:
-    - temp
-        - Already represented with atemp variable variable
-    - dteday
-        - Already extracted into Year, Month, Day, Hour features
-    - casual
-    - registered
-        - casual and registered dropped because the target model used is the variable **cnt** which is the sum of **casual** data and **registered** data.
+- temp
+    - Already represented with atemp variable variable
+- dteday
+    - Already extracted into Year, Month, Day, Hour features
+- casual
+- registered
+    - casual and registered dropped because the target model used is the variable **cnt** which is the sum of **casual** data and **registered** data.
 
-- The Best Base Models:
+- Base Models:
     - Decision Tree Regressor
     - Random Forest Regressor
     - XGBoost Regressor
     
 - Hyperparameter Tuning:
      - Decision Tree Regressor
-         - best.params: 'max_depth' : [15], 'max_features' : None, 'min_samples_leaf' : [2], 'min_samples_split' : [12]
+         - best.params: 'max_depth' : [49], 'max_features' : ['auto'], 'min_samples_leaf' : [1], 'min_samples_split' : [16]
+         - best.params: 'max_depth' : [15], 'max_features' : [None], 'min_samples_leaf' : [2], 'min_samples_split' : [12]
+         - best.params: 'criterion' : ['mae'], 'max_depth' : [17], 'max_features' : [None], 'min_samples_leaf' : [2], 'min_samples_split' : [16]
     - Random Forest Regressor
-        - best.params: 'n_estimators' : [2280], 'max_depth' : [81], 'max_features' : ['None'], 'min_samples_leaf' : [1], 'min_samples_split' : [4]
+        - best.params:  'n_estimators' : [6800], 'max_depth' : [76], 'max_features' : ['auto'], 'min_samples_leaf' : [2], 'min_samples_split' : [2]
+        - best.params:  'n_estimators' : [6170], 'max_depth' : [26], 'max_features' : ['auto'], 'min_samples_leaf' : [1], 'min_samples_split' : [2]
     - XGBoost Regressor
-        - best.params: 'learning_rate' : [0.1], 'max_depth' : [6], 'n_estimators' : [1300]
+        - best.params: 'learning_rate' : [0.1], 'max_depth' : [6], 'n_estimators' : [1600]
+        - best.params: 'learning_rate' : [0.3], 'max_depth' : [31], 'n_estimators' : [2300]
    
 
 Evaluation Matrix Table
