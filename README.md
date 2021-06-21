@@ -166,7 +166,7 @@ To conclude, We understand that Our Machine Learning Prediction on this Project 
 
 ## Model Deployment Dashboard using Flask
 ### Predict Page
-![Predict](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/matrix.png)
+![Predict](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/predict.png)
 
 ### Result Page
-![Result](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/matrix.png)
+![Result](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/result.png)
