@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Bike Prediction Washington DC</title>
+  </head>
+  <body>
+    <center>
+      <p><b>Bike Sharing in Washington D.C. Dataset</b></p>
+      <div class='table' style='overflow: auto; height: 400px; width: 70%; margin:0 auto'>
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                  <th></th>
+                  <th>season</th>
+                  <th>year</th>
+                  <th>month</th>
+                  <th>hour</th>
+                  <th>holiday</th>
+                  <th>day</th>
+                  <th>work</th>
+                  <th>weather</th>
+                  <th>atemp</th>
+                  <th>hum</th>
+                  <th>wind</th>
+                  <th>cnt</th>
+                  <th>event</th>
+                </tr>
+              </thead>
+              {% for item in data %}
+              <tr>
+                  <td>*</td>
+                  <td>{{item[2]}}</td>
+                  <td>{{item[3]}}</td>
+                  <td>{{item[4]}}</td>
+                  <td>{{item[5]}}</td>
+                  <td>{{item[6]}}</td>
+                  <td>{{item[7]}}</td>
+                  <td>{{item[8]}}</td>
+                  <td>{{item[9]}}</td>
+                  <td>{{item[11]}}</td>
+                  <td>{{item[12]}}</td>
+                  <td>{{item[13]}}</td>
+                  <td>{{item[14]}}</td>
+                  <td>{{item[15]}}</td>
+              </tr>
+              {% endfor %}
+          </table>
+      </div>
+      <form method="POST" action="http://127.0.0.1:5000/hasil">
+        <br>
+        <p><b>Bike Prediction Washington DC</b></p>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Season :</span>
+            <select name="season" style="width: 250px" class="form-control" required="required">
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Fall">Fall</option>
+            <option value="Winter">Winter</option>
+            <option disabled selected hidden>Season ?</option>
+        </select>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Year :</span>
+            <input type="number" name="yr" step="0" min="2012" max="3000" style="width: 250px" id="yr" class="form-control" required=True/>
+        </div>
+        <!-- <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Date :</span>
+            <input type="date" name="date" style="width: 250px" id="date" class="form-control" required=True/>
+        </div> -->
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Month :</span>
+            <select name="mnth" style="width: 250px" class="form-control" required="required">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+            <option disabled selected hidden>Month ?</option>
+        </select>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Hour :</span>
+            <select name="hr" style="width: 250px" class="form-control" required="required">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option disabled selected hidden>Hour ?</option>
+        </select>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Holiday :</span>
+            <select name="holiday" style="width: 250px" class="form-control" required="required">
+            <option value="Holiday">Yes</option>
+            <option value="NonHoliday">No</option>
+            <option disabled selected hidden>Holiday ?</option>
+        </select>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Day :</span>
+            <select name="weekday" style="width: 250px" class="form-control" required="required">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+            <option disabled selected hidden>Day ?</option>
+        </select>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Workingday :</span>
+            <select name="workingday" style="width: 250px" class="form-control" required="required">
+            <option value="Work">Yes</option>
+            <option value="NonWork">No</option>
+            <option disabled selected hidden>Workingday ?</option>
+        </select>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Weather :</span>
+            <select name="weathersit" style="width: 250px" class="form-control" required="required">
+            <option value="Clear">Clear</option>
+            <option value="Cloudy">Cloudy</option>
+            <option value="Light">Light Rain/Snow</option>
+            <option value="Heavy">Heavy Rain/Snow</option>
+            <option disabled selected hidden>Weather ?</option>
+        </select>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Feels-Like-Temperature :</span>
+            <input type="number" name="atemp" step="0.01" min="-50" max="100" style="width: 250px" id="atemp" class="form-control" required=True/>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Humidity :</span>
+            <input type="number" name="hum" step="0.01" min="0" max="100" style="width: 250px" id="hum" class="form-control" required=True/>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Windspeed :</span>
+            <input type="number" name="windspeed" step="0.01" min="0" max="100" style="width: 250px" id="wind" class="form-control" required=True/>
+        </div>
+        <div class="input-group mb-3" style="width: 500px">
+            <span class="input-group-text" style="width: 200px">Event :</span>
+            <select name="event" style="width: 250px" class="form-control" required="required">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option disabled selected hidden>Event ?</option>
+        </select>
+        </div>
+        <br>
+        <button type="submit" style="background-color: rgb(4,122,133); color: whitesmoke" class="btn btn-info">Predict Bike</button>
+    </form>
+    <hr>
+      <a href="/" target="_self">
+          <button style="background-color: rgb(255, 90, 95); color: whitesmoke" class="btn btn-light">
+              Back to Home
+          </button>
+      </a>
+    <br>
+    </center>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
