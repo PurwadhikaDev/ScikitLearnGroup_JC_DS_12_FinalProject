@@ -54,7 +54,7 @@ Nowadays Bike Sharing Systems are growing rapidly, the demand of using the syste
 ## Goals
 
 - Creating a Prediction for Bike Sharing Demand (minimum and maximum) to reduce number of customer loss, reduce cost efficiency and predict how many bikes need to be placed in each station each day.
-- Creating an efficient Maintenance Schedule to prevent customer los
+- Creating an efficient Maintenance Schedule to prevent customer loss
 
 ## Data Cleaning & Pre - Processing
 
