@@ -131,6 +131,7 @@ Based on the Evaluation Matrix above, discovered that there are five Machine Lea
 - `DecisionTree Tuned Grid 2` have the 2nd best Residual Negative score right after `Base DecisionTree`, but it's MedAE & R-Squared are not good enough.
 - `Base RandomForest`, `RandomForest Tuned Bayes` and `RandomForest Tuned Random` have similar Evaluation Matrix score.
 
+[Full Machine Learning](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/Machine%20Learning%20-%20Bike%20Sharing.ipynb)
 
 ### Conclusion
 
