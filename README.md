@@ -164,7 +164,7 @@ To conclude, We understand that Our Machine Learning Prediction on this Project 
 - Numbers of Bike Station and their Specific Location
 - Performance Metrics can be modified to be more relevant with business problem.
 
-## Model Deployment Dashboard using Flask
+## Model Deployment - Dashboard using Flask
 ### Predict Page
 ![Predict](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/predict.png)
 
