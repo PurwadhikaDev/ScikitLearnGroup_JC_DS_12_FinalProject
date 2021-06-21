@@ -122,7 +122,7 @@ Feature Selection is performed on Variables:
    
 
 Evaluation Matrix Table
-- ![Eva Matrix](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/Compare.png)
+- ![Eva Matrix](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/matrix.png)
 
 ### Machine Learning Insight
 
