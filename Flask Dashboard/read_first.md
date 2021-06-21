@@ -4,4 +4,4 @@
 
 ## How to Compile the parts : Extract Model_RF_RS.part01.rar and wait until its finish.
 
-Note : Make sure Model file and app.test.py file in the same folder
+Note : Make sure the Model file and app.test.py file in the same folder
