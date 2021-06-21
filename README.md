@@ -9,7 +9,7 @@ Member :
 
 Dataset taken from : [Bike Sharing in Washington D.C. Dataset](https://www.kaggle.com/marklvl/bike-sharing-dataset)
 
-### Background
+## Background
 
 Bike sharing systems are a new generation of traditional bike rentals where the whole process from membership, rental and return back has become automatic. Through these systems, user is able to easily rent a bike from a particular position and return back to another position. Currently, there are about over 500 bike-sharing programs around the world which are composed of over 500 thousands bicycles. Today, there exists great interest in these systems due to their important role in traffic, environmental and health issues.
 
@@ -41,24 +41,22 @@ Dataset Characteristic
 - registered: count of registered users
 - cnt: count of total rental bikes including both casual and registered
 
-
-
-### Introduction
+## Introduction
 
 Nowadays Bike Sharing Systems are growing rapidly, the demand of using the systems are also Increasing. Eventually the volume of Bike Sharing Systems are fluctuating from time to time(e.g. Changing hourly, weekly, monthly, and yearly), therefore the maintenance schedule need to be structured and dynamic. The Maintenance Scheduled is adjusted to the trend of the volume of bicycle use, is expected to maximize the life of the bicycle, minimize customer loss due to a shortage of bicycle stock in the field when demand for bicycles is high and maximize income if the demand for bicycle use can always be met, as well as cost efficient.
 
-### Problems
+## Problems
 
 - Bad Maintenance Schedule can affect the lifespan of Bicycles and could increase potential loss of customers (Bike maintenance are related to stock management, since the bicycles are being withdrawn to go under maintenance). When there are many bicycles that must be repaired simultaneously, it indirectly reduces the stock of bicycles in the field and becomes a potential loss of customers).
 - The volume of bicycle use in certain seasons (_winter_) is relatively smaller than in other seasons.
 - What does the company need to do when there's "SPIKE" in Bike Sharing Demand ?
 
-### Goals
+## Goals
 
 - Creating a Prediction for Bike Sharing Demand (minimum and maximum) to reduce number of customer loss, reduce cost efficiency and predict how many bikes need to be placed in each station each day.
 - Creating an efficient Maintenance Schedule to prevent customer loss
 
-### Data Cleaning & Pre - Processing
+## Data Cleaning & Pre - Processing
 
 - Checking Missing Value
     - ![Missing Value](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/missing%20value.jpeg)
@@ -82,7 +80,7 @@ Nowadays Bike Sharing Systems are growing rapidly, the demand of using the syste
          - Workingday
          - Weathersit
          
-### Quick Data Analysis
+## Quick Data Analysis
 
 - From the analysis we get, people in Washington, D.C. are more likely to cycle when the temperature conditions are warm with a temperature range of 20-30s degrees Celsius, it can be interpreted that it is the ideal temperature. Because the average temperature in Washington DC is 17 degrees Celsius.
 
@@ -94,7 +92,7 @@ Nowadays Bike Sharing Systems are growing rapidly, the demand of using the syste
 
 - [Full Data Analysis](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/Exploratory%20Data%20Analysis%20-%20Bike%20Sharing.ipynb)
 
-### Machine Learning Regression
+## Machine Learning Regression
 
 Machine Learning Regression is made to predict the number of bicycle stocks provided every day. Target Scoring is R-Squared, Median Absolute Error and Residual Negative. The higher the R-Squared value, the smaller the Median Absolute Error obtained.
 
@@ -128,7 +126,7 @@ Feature Selection is performed on Variables:
 Evaluation Matrix Table
 - ![Eva Matrix](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/matrix.png)
 
-### Machine Learning Insight
+## Machine Learning Insight
 
 Based on the Evaluation Matrix above, discovered that there are five Machine Learning Models that meet the criteria for Bike Sharing Prediction. With a scoring basis of R-Squared, M(ed)AE, and Residual Negative
 - `Base DecisionTree` have the best Residual Negative score, but it's Overfitting. 
@@ -137,7 +135,7 @@ Based on the Evaluation Matrix above, discovered that there are five Machine Lea
 
 [Full Machine Learning](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/Machine%20Learning%20-%20Bike%20Sharing.ipynb)
 
-### Conclusion
+## Conclusion
 
 Best model that we choose is **RandomForest Tuned Random**, because it’s R-Squared is 94.99, it’s MedAE is lower than the average of all MedAE and Residual Negative is 52.95%.
 
@@ -157,7 +155,7 @@ Best model that we choose is **RandomForest Tuned Random**, because it’s R-Squ
      - Bike Storing Efficiency
          - To store Bikes when there's low demand to prevent damage to the bicycle itself.
 
-### Future Works & Improvement
+## Future Works & Improvement
 
 To conclude, We understand that Our Machine Learning Prediction on this Project  is not perfect. Because there’s several factors that can improve Our Model Prediction such as:
 - Cost/Sales of the Bike Rent
@@ -166,4 +164,9 @@ To conclude, We understand that Our Machine Learning Prediction on this Project 
 - Numbers of Bike Station and their Specific Location
 - Performance Metrics can be modified to be more relevant with business problem.
 
-   
+## Model Deployment Dashboard using Flask
+### Predict Page
+![Predict](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/matrix.png)
+
+### Result Page
+![Result](https://github.com/PurwadhikaDev/ScikitLearnGroup_JC_DS_12_FinalProject/blob/main/SS/matrix.png)
